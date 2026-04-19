@@ -1,0 +1,135 @@
+body {
+  margin: 0;
+  background: #000;
+  color: #fff;
+  font-family: Arial, sans-serif;
+}
+
+.site-header {
+  padding: 20px;
+  display: flex;
+  justify-content: space-between;
+  background: #111;
+}
+
+.main-nav a {
+  color: #ccc;
+  margin-left: 20px;
+  text-decoration: none;
+}
+
+.main-nav a:hover {
+  color: #fff;
+}
+
+section {
+  padding: 60px 20px;
+  max-width: 900px;
+  margin: auto;
+}
+
+h1, h2, h3 {
+  margin-bottom: 15px;
+}
+
+p {
+  color: #b3b3b3;
+  line-height: 1.6;
+}
+
+.btn {
+  padding: 12px 22px;
+  text-decoration: none;
+  color: #fff;
+  border-radius: 4px;
+  display: inline-block;
+  margin-right: 10px;
+}
+
+.btn.primary {
+  background: #333;
+}
+
+.btn.red {
+  background: #8b0000;
+}
+
+.hero-bg {
+  height: 60vh;
+  background-size: cover;
+  background-position: center;
+  position: relative;
+}
+
+.hero-overlay {
+  position: absolute;
+  inset: 0;
+  background: rgba(0,0,0,0.6);
+}
+
+.hero-content {
+  position: relative;
+  padding: 40px 20px;
+}
+
+.featured-box {
+  display: flex;
+  gap: 20px;
+}
+
+.featured-box img {
+  width: 200px;
+  border-radius: 6px;
+}
+
+.trailer-wrap iframe {
+  width: 100%;
+  height: 400px;
+}
+
+.projects-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(260px, 1fr));
+  gap: 20px;
+}
+
+.project-card {
+  background: #111;
+  padding: 20px;
+  border-radius: 6px;
+}
+
+.project-card img {
+  width: 100%;
+  border-radius: 6px;
+}
+
+.email-form input,
+.contact-form input,
+.contact-form textarea {
+  width: 100%;
+  padding: 12px;
+  margin-bottom: 12px;
+  background: #111;
+  border: 1px solid #333;
+  color: #fff;
+}
+
+.preorder-img,
+.preorder-img-lg {
+  width: 100%;
+  max-width: 300px;
+  display: block;
+  margin-bottom: 20px;
+}
+
+#json-editor {
+  width: 100%;
+  height: 80vh;
+  background: #111;
+  color: #fff;
+  padding: 20px;
+  border: none;
+  outline: none;
+  font-family: monospace;
+}
