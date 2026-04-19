@@ -1,0 +1,67 @@
+{
+  "studioName": "Levy Media Studios",
+  "studioTagline": "Original cinematic storytelling across books, trailers, comics, and future film.",
+  "studioDescription": "Levy Media Studios is an independent media company creating original content across multiple formats.",
+
+  "theme": {
+    "background": "#000000",
+    "sectionDark": "#111111",
+    "textMain": "#ffffff",
+    "textMuted": "#b3b3b3",
+    "buttonColor": "#8b0000"
+  },
+
+  "bamn": {
+    "title": "BAMN Universe",
+    "shortDescription": "A full story world expanding across books, trailers, comics, visuals, and future film content.",
+    "longDescription": "BAMN Universe is the first major project from Levy Media Studios. It begins with a book and expands into trailers, comics, visuals, and future film or animated content.",
+    "coverImage": "/assets/img/placeholder.jpg",
+    "heroImage": "/assets/img/placeholder.jpg",
+    "trailerUrl": "https://youtube.com/embed/REPLACE",
+    "preorderUrl": "https://your-preorder-link.com"
+  },
+
+  "homePage": {
+    "heroHeadline": "Levy Media Studios",
+    "heroSubtext": "A cinematic media studio building original story worlds, starting with BAMN Universe.",
+    "aboutText": "Levy Media Studios is an independent media company focused on creating and owning original content.",
+    "emailHeadline": "Join the BAMN Universe Email List",
+    "emailSubtext": "Get early access, updates, and behind-the-scenes content.",
+    "preorderHeadline": "Pre Order BAMN Universe",
+    "preorderSubtext": "Be one of the first to step into the BAMN Universe story world.",
+    "comingSoonText": "More projects from Levy Media Studios are coming soon.",
+    "contactText": "Have questions or opportunities? Contact Levy Media Studios."
+  },
+
+  "aboutPage": {
+    "company": "Levy Media Studios is a story-first media studio focused on building original universes.",
+    "mission": "To create and own original story worlds that connect deeply with audiences.",
+    "vision": "To grow BAMN Universe and future projects into fully realized cinematic worlds.",
+    "founder": "Founded by [Founder Name], Levy Media Studios was built to keep creative control at the center of storytelling."
+  },
+
+  "projectsPage": {
+    "projects": [
+      {
+        "title": "BAMN Universe",
+        "description": "A full story universe that begins with a book and expands into trailers, comics, visuals, and future film content.",
+        "image": "/assets/img/placeholder.jpg",
+        "trailerUrl": "https://youtube.com/embed/REPLACE",
+        "preorderUrl": "https://your-preorder-link.com"
+      }
+    ]
+  },
+
+  "preorderPage": {
+    "title": "Pre Order BAMN Universe",
+    "description": "Pre order now to be among the first to experience the BAMN Universe story world.",
+    "emailHeadline": "Join the BAMN Universe Email List",
+    "emailSubtext": "Get updates on releases, trailers, and new content."
+  },
+
+  "contactPage": {
+    "headline": "Contact Levy Media Studios",
+    "subtext": "For general inquiries, collaborations, or media requests.",
+    "emailTo": "levymediastudios@gmail.com"
+  }
+}
