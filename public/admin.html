@@ -2,18 +2,70 @@
 <html lang="en">
 <head>
   <meta charset="UTF-8" />
+
   <title>Admin | Levy Media Studios</title>
   <meta name="viewport" content="width=device-width, initial-scale=1" />
-  <link rel="stylesheet" href="assets/css/styles.css" />
+
+  <!-- Favicon -->
+  <link rel="icon" type="image/png" href="/assets/img/favicon.png" />
+  <link rel="apple-touch-icon" href="/assets/img/favicon.png" />
+
+  <!-- Manifest -->
+  <link rel="manifest" href="/manifest.json" />
+
+  <!-- Theme Color -->
+  <meta name="theme-color" content="#000000" />
+
+  <!-- OpenGraph -->
+  <meta property="og:title" content="Admin | Levy Media Studios" />
+  <meta property="og:description" content="Edit and update the Levy Media Studios website content." />
+  <meta property="og:image" content="/assets/img/social-preview.jpg" />
+  <meta property="og:type" content="website" />
+  <meta property="og:url" content="https://levymediastudios.com/admin.html" />
+
+  <!-- Twitter Card -->
+  <meta name="twitter:card" content="summary_large_image" />
+  <meta name="twitter:title" content="Admin | Levy Media Studios" />
+  <meta name="twitter:description" content="Edit and update the Levy Media Studios website content." />
+  <meta name="twitter:image" content="/assets/img/social-preview.jpg" />
+
+  <!-- Styles -->
+  <link rel="stylesheet" href="/assets/css/styles.css" />
 </head>
+
 <body>
+
+<header class="site-header">
+  <div class="logo">Admin Panel</div>
+  <nav class="main-nav">
+    <a href="/index.html">Home</a>
+    <a href="/about.html">About</a>
+    <a href="/projects.html">Projects</a>
+    <a href="/preorder.html">Pre Order</a>
+    <a href="/contact.html">Contact</a>
+  </nav>
+</header>
 
 <main id="admin-page">
   <h1>Site Editor</h1>
+
+  <p style="color:#b3b3b3; margin-bottom:20px;">
+    Edit the entire website content below.  
+    When finished, click <strong>Save to Website</strong> to update the live site.
+  </p>
+
   <textarea id="json-editor"></textarea>
-  <button id="save-json">Save</button>
+
+  <div style="margin-top:20px;">
+    <button id="save-json" class="btn primary">Download Backup</button>
+    <button id="push-json" class="btn red">Save to Website</button>
+  </div>
 </main>
 
-<script src="assets/js/admin.js"></script>
+<footer class="site-footer">
+  <p>© <span id="year"></span> Levy Media Studios</p>
+</footer>
+
+<script src="/assets/js/admin.js"></script>
 </body>
 </html>
