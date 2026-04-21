@@ -2,36 +2,26 @@
 <html lang="en">
 <head>
   <meta charset="UTF-8" />
-
   <title>Levy Media Studios | Home</title>
   <meta name="viewport" content="width=device-width, initial-scale=1" />
-
   <link rel="icon" type="image/jpeg" href="/assets/img/levy-icon.jpg" />
   <link rel="apple-touch-icon" href="/assets/img/levy-icon.jpg" />
   <link rel="manifest" href="/manifest.json" />
   <meta name="theme-color" content="#000000" />
-
-  <meta property="og:title" content="Levy Media Studios" />
-  <meta property="og:description" content="A cinematic media studio building original story worlds, starting with BAMN Universe." />
-  <meta property="og:image" content="/assets/img/levy-icon.jpg" />
-  <meta property="og:type" content="website" />
-  <meta property="og:url" content="https://levymediastudios.com/" />
-
   <link rel="stylesheet" href="/assets/css/styles.css" />
 </head>
-
-<body>
+<body class="theme-dark">
 
 <header class="site-header">
   <div class="logo">
     <img src="/assets/img/levy-logo.jpg" alt="Levy Media Studios Logo" />
   </div>
-
   <nav class="main-nav">
     <a href="/index.html">Home</a>
+    <a href="/pages/bamn.html">BAMN Universe</a>
+    <a href="/pages/ppp.html">PPP</a>
+    <a href="/pages/media.html">Media</a>
     <a href="/pages/about.html">About</a>
-    <a href="/pages/projects.html">Projects</a>
-    <a href="/pages/preorder.html">Pre Order</a>
     <a href="/pages/contact.html">Contact</a>
   </nav>
 </header>
@@ -39,105 +29,65 @@
 <main id="page-home">
 
   <!-- HERO -->
-  <section id="home-hero" style="text-align:center; padding:120px 20px; background:url('/assets/img/levy-icon.jpg') center/cover no-repeat;">
-    <h1 style="font-size:60px; margin-bottom:20px;">Levy Media Studios</h1>
-    <p style="font-size:22px; color:#ccc; max-width:700px; margin:0 auto 30px;">
-      A cinematic media studio creating original story worlds — starting with the BAMN Universe.
-    </p>
-
-    <a href="/pages/projects.html" class="btn btn-preorder" style="margin-right:10px;">Watch Trailer</a>
-    <a href="/pages/preorder.html" class="btn btn-details">Pre Order Now</a>
-  </section>
-
-  <!-- ABOUT -->
-  <section id="home-about">
-    <h2>What Is Levy Media Studios?</h2>
-    <p>
-      Levy Media Studios is an independent creative studio focused on building original, interconnected story universes.
-      Our flagship project, <strong>BAMN Universe</strong>, expands across books, trailers, visuals, and future film content.
-      Every project is part of a larger world — and this is only the beginning.
-    </p>
-  </section>
-
-  <!-- FEATURED PROJECT -->
-  <section id="home-featured">
-    <h2>Featured Project: BAMN Universe</h2>
-
-    <div style="display:flex; gap:40px; align-items:flex-start; flex-wrap:wrap;">
-
-      <div style="flex:2; min-width:300px;">
-        <h3>By Any Means — Book 1</h3>
-        <p>
-          The first entry into the BAMN Universe. A gritty, emotional, character‑driven story about survival,
-          loyalty, and the cost of ambition.
-        </p>
-        <a href="/pages/projects.html" class="btn btn-details">Watch Trailer</a>
-        <a href="/pages/preorder.html" class="btn btn-preorder">Pre Order</a>
+  <section id="home-hero" class="hero hero-cinematic">
+    <div class="hero-overlay">
+      <h1>Stories That Expose Truth.<br />Worlds Built By Any Means Necessary.</h1>
+      <p>Urban storytelling meets real-world systems.</p>
+      <div class="hero-actions">
+        <a href="/pages/bamn.html" class="btn btn-gold">Enter BAMN Universe</a>
+        <a href="/pages/ppp.html" class="btn btn-outline">Explore The System (PPP)</a>
       </div>
-
-      <div style="flex:1; min-width:250px;">
-        <img src="/assets/img/BAM.png" alt="By Any Means Book Cover" style="width:100%; border-radius:8px;" />
-        <p style="margin-top:10px; font-size:18px; color:#1e90ff;">$19.99</p>
-      </div>
-
     </div>
   </section>
 
-  <!-- TRAILER -->
-  <section id="home-trailer">
-    <h2>Official Trailer</h2>
-    <iframe
-      src="https://www.youtube.com/embed/VIDEO_ID_1"
-      allowfullscreen
-      style="width:100%; max-width:900px; height:500px; border-radius:10px; display:block; margin:0 auto;">
-    </iframe>
+  <!-- FEATURED TRAILER -->
+  <section id="home-featured-trailer" class="section">
+    <h2>Featured Trailer</h2>
+    <div class="video-wrapper">
+      <iframe src="https://www.youtube.com/embed/VIDEO_ID_BAMN" allowfullscreen></iframe>
+    </div>
+    <p class="section-subtext">Watch the world of BAMN unfold.</p>
   </section>
 
-  <!-- EMAIL SIGNUP -->
-  <section id="home-email">
-    <h2>Join the BAMN Universe Mailing List</h2>
-    <p>Get updates, early previews, and exclusive content.</p>
-
-    <input type="email" placeholder="Your email" />
-    <button class="btn btn-preorder">Join Now</button>
-  </section>
-
-  <!-- PREORDER SECTION -->
-  <section id="home-preorder">
-    <h2>Pre Order BAMN Universe</h2>
-
-    <div style="display:flex; gap:40px; align-items:flex-start; flex-wrap:wrap;">
-
-      <div style="flex:2; min-width:300px;">
-        <h3>By Any Means 2 — Book 2</h3>
-        <p>
-          The second installment raises the stakes and expands the world. More danger. More heart.
-          More of what made the first book unforgettable.
-        </p>
-        <a href="/pages/preorder.html" class="btn btn-preorder">Pre Order Now</a>
-      </div>
-
-      <div style="flex:1; min-width:250px;">
-        <img src="/assets/img/BAM2.jpg" alt="By Any Means 2 Book Cover" style="width:100%; border-radius:8px;" />
-        <p style="margin-top:10px; font-size:18px; color:#1e90ff;">$24.99</p>
-      </div>
-
+  <!-- PROJECTS -->
+  <section id="home-projects" class="section">
+    <h2>Featured Projects</h2>
+    <div class="projects-grid">
+      <article class="project-card">
+        <h3>BAMN Universe</h3>
+        <p>A cinematic story world built around power, loyalty, and survival — by any means necessary.</p>
+        <a href="/pages/bamn.html" class="btn btn-gold">Enter Universe</a>
+      </article>
+      <article class="project-card">
+        <h3>Preschool to Prison Pipeline (PPP)</h3>
+        <p>A breakdown of the system that was never broken — it was built this way.</p>
+        <a href="/pages/ppp.html" class="btn btn-outline">Read the Truth</a>
+      </article>
     </div>
   </section>
 
-  <!-- COMING SOON -->
-  <section id="home-coming">
-    <h2>More Projects Coming Soon</h2>
-    <p>
-      The BAMN Universe is only the beginning. New stories, new characters, and new worlds are already in development.
-    </p>
+  <!-- BRAND AUTHORITY -->
+  <section id="home-brand" class="section">
+    <h2>Built by Levy Media Studios</h2>
+    <p>Levy Media Studios is a cinematic media company focused on:</p>
+    <ul class="brand-list">
+      <li>Books and long-form storytelling</li>
+      <li>Comics and visual narratives</li>
+      <li>Film, trailers, and animation</li>
+      <li>Real-world impact storytelling rooted in truth</li>
+    </ul>
   </section>
 
-  <!-- CONTACT -->
-  <section id="home-contact">
-    <h2>Contact Us</h2>
-    <p>Have questions or want to collaborate? Reach out anytime.</p>
-    <a href="/pages/contact.html" class="btn btn-details">Contact Page</a>
+  <!-- LEAD CAPTURE -->
+  <section id="home-leads" class="section section-lead">
+    <h2>Get Early Access</h2>
+    <p>Be the first to know about new drops, trailers, and releases.</p>
+    <form id="lead-form" class="lead-form">
+      <input type="text" name="name" placeholder="Your Name" required />
+      <input type="email" name="email" placeholder="Your Email" required />
+      <button type="submit" class="btn btn-gold">Join the List</button>
+    </form>
+    <p id="lead-status" class="form-status"></p>
   </section>
 
 </main>
@@ -149,6 +99,6 @@
 <script>
   document.getElementById("year").textContent = new Date().getFullYear();
 </script>
-
+<script src="/assets/js/content.js"></script>
 </body>
 </html>
