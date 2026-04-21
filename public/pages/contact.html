@@ -2,118 +2,63 @@
 <html lang="en">
 <head>
   <meta charset="UTF-8" />
-
-  <title>Contact | Levy Media Studios</title>
+  <title>Contact & Connect | Levy Media Studios</title>
   <meta name="viewport" content="width=device-width, initial-scale=1" />
-
   <link rel="icon" type="image/jpeg" href="/assets/img/levy-icon.jpg" />
-  <link rel="apple-touch-icon" href="/assets/img/levy-icon.jpg" />
-  <link rel="manifest" href="/manifest.json" />
-  <meta name="theme-color" content="#000000" />
-
-  <meta property="og:title" content="Contact | Levy Media Studios" />
-  <meta property="og:description" content="Get in touch with Levy Media Studios." />
-  <meta property="og:image" content="/assets/img/levy-icon.jpg" />
-  <meta property="og:type" content="website" />
-  <meta property="og:url" content="https://levymediastudios.com/pages/contact.html" />
-
   <link rel="stylesheet" href="/assets/css/styles.css" />
 </head>
-
-<body>
+<body class="theme-dark">
 
 <header class="site-header">
   <div class="logo">
     <img src="/assets/img/levy-logo.jpg" alt="Levy Media Studios Logo" />
   </div>
-
   <nav class="main-nav">
     <a href="/index.html">Home</a>
+    <a href="/pages/bamn.html">BAMN Universe</a>
+    <a href="/pages/ppp.html">PPP</a>
+    <a href="/pages/media.html">Media</a>
     <a href="/pages/about.html">About</a>
-    <a href="/pages/projects.html">Projects</a>
-    <a href="/pages/preorder.html">Pre Order</a>
     <a href="/pages/contact.html">Contact</a>
   </nav>
 </header>
 
 <main id="page-contact">
-  <section id="contact-main" class="contact-section">
 
-    <h1>Contact Levy Media Studios</h1>
-
-    <div class="contact-info">
-      <p><strong>Phone:</strong> 313‑588‑9807</p>
-      <p><strong>Business:</strong> 4Hammers Property Management LLC</p>
-      <p><strong>Address:</strong><br>
-        1950 S Rochester Rd. #1070<br>
-        Rochester Hills, MI 48307<br>
-        United States
-      </p>
-    </div>
-
-    <hr>
-
-    <h2>Send Us a Message</h2>
-    <p>Use the form below to contact us directly. Your message will appear in the Owner Dashboard.</p>
-
-    <div class="contact-form">
-      <input id="contact-name" type="text" placeholder="Your Name" />
-      <input id="contact-email" type="email" placeholder="Your Email" />
-      <textarea id="contact-message" placeholder="Your Message"></textarea>
-      <button id="contact-submit" class="btn btn-preorder">Send Message</button>
-    </div>
-
-    <p id="contact-status" style="margin-top:10px; color:#1e90ff; display:none;">
-      Message sent successfully.
-    </p>
-
-    <hr>
-
-    <h2>Owner Access</h2>
-    <p>If you are the owner, access your dashboard below.</p>
-
-    <a href="/admin/index.html" class="btn btn-details" style="margin-top:10px;">
-      Go to Owner Dashboard
-    </a>
-
+  <section class="section">
+    <h1>Contact & Connect</h1>
+    <p>For collaborations, business inquiries, partnerships, and media requests — use the form below.</p>
   </section>
+
+  <section class="section">
+    <h2>Contact Form</h2>
+    <form id="contact-form" class="contact-form">
+      <input type="text" name="name" placeholder="Your Name" required />
+      <input type="email" name="email" placeholder="Your Email" required />
+      <textarea name="message" placeholder="Your Message" required></textarea>
+      <button type="submit" class="btn btn-gold">Send Message</button>
+    </form>
+    <p id="contact-status" class="form-status"></p>
+  </section>
+
+  <section class="section">
+    <h2>Business & Media</h2>
+    <p>Use this channel for:</p>
+    <ul>
+      <li>Business partnerships</li>
+      <li>Media and interview requests</li>
+      <li>Speaking or panel invitations</li>
+    </ul>
+  </section>
+
 </main>
 
 <footer class="site-footer">
   <p>© <span id="year"></span> Levy Media Studios</p>
 </footer>
 
-<script src="/assets/js/content.js"></script>
-
 <script>
-  // SEND MESSAGE TO DASHBOARD (D1)
-  document.getElementById("contact-submit").addEventListener("click", async () => {
-    const name = document.getElementById("contact-name").value.trim();
-    const email = document.getElementById("contact-email").value.trim();
-    const message = document.getElementById("contact-message").value.trim();
-
-    if (!name || !email || !message) {
-      alert("Please fill out all fields.");
-      return;
-    }
-
-    await fetch("/api/track", {
-      method: "POST",
-      headers: { "Content-Type": "application/json" },
-      body: JSON.stringify({
-        type: "event",
-        event_type: "contact_message",
-        page: "/pages/contact.html",
-        extra: { name, email, message }
-      })
-    });
-
-    document.getElementById("contact-status").style.display = "block";
-    document.getElementById("contact-name").value = "";
-    document.getElementById("contact-email").value = "";
-    document.getElementById("contact-message").value = "";
-  });
+  document.getElementById("year").textContent = new Date().getFullYear();
 </script>
-
 </body>
 </html>
