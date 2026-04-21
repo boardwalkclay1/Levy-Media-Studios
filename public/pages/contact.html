@@ -43,14 +43,36 @@
   <section class="section">
     <div class="glass-block">
       <h1>Contact & Connect</h1>
-      <p>For collaborations, business inquiries, partnerships, and media requests — reach out below.</p>
+      <p>
+        For professional collaborations, business partnerships, media inquiries, or general questions, 
+        please use the form below. All messages are reviewed directly by Levy Media Studios.
+      </p>
     </div>
   </section>
 
-  <!-- BUSINESS INFO WITH LOGO -->
+  <!-- SEND A MESSAGE -->
   <section class="section">
     <div class="glass-block">
+      <h2>Send a Message</h2>
+      <p>
+        Whether you're reaching out regarding creative collaboration, licensing, distribution, 
+        educational use, or simply have a question — we welcome your message.
+      </p>
 
+      <form id="contact-form" class="contact-form">
+        <input type="text" name="name" placeholder="Your Name" required />
+        <input type="email" name="email" placeholder="Your Email" required />
+        <textarea name="message" placeholder="Your Message" required></textarea>
+        <button type="submit" class="btn btn-gold">Send Message</button>
+      </form>
+
+      <p id="contact-status" class="form-status"></p>
+    </div>
+  </section>
+
+  <!-- BUSINESS INFO (BOTTOM OF PAGE) -->
+  <section class="section">
+    <div class="glass-block">
       <h2>Business Information</h2>
 
       <div style="display:flex; align-items:flex-start; gap:25px; margin-top:20px;">
@@ -76,34 +98,6 @@
         </div>
 
       </div>
-
-    </div>
-  </section>
-
-  <!-- CONTACT FORM -->
-  <section class="section">
-    <div class="glass-block">
-      <h2>Send a Message</h2>
-      <p>Your message will be delivered directly to the Owner Dashboard.</p>
-
-      <form id="contact-form" class="contact-form">
-        <input type="text" name="name" placeholder="Your Name" required />
-        <input type="email" name="email" placeholder="Your Email" required />
-        <textarea name="message" placeholder="Your Message" required></textarea>
-        <button type="submit" class="btn btn-gold">Send Message</button>
-      </form>
-
-      <p id="contact-status" class="form-status"></p>
-    </div>
-  </section>
-
-  <!-- OWNER DASHBOARD -->
-  <section class="section">
-    <div class="glass-block">
-      <h2>Owner Access</h2>
-      <p>If you are the owner, access your dashboard below.</p>
-
-      <a href="/admin/index.html" class="btn btn-outline">Go to Owner Dashboard</a>
     </div>
   </section>
 
