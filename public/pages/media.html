@@ -4,15 +4,18 @@
   <meta charset="UTF-8" />
   <title>Media & Trailers | Levy Media Studios</title>
   <meta name="viewport" content="width=device-width, initial-scale=1" />
+
   <link rel="icon" type="image/jpeg" href="/assets/img/levy-icon.jpg" />
   <link rel="stylesheet" href="/assets/css/styles.css" />
 </head>
+
 <body class="theme-dark">
 
 <header class="site-header">
   <div class="logo">
     <img src="/assets/img/levy-logo.jpg" alt="Levy Media Studios Logo" />
   </div>
+
   <nav class="main-nav">
     <a href="/index.html">Home</a>
     <a href="/pages/bamn.html">BAMN Universe</a>
@@ -25,35 +28,75 @@
 
 <main id="page-media">
 
+  <!-- PAGE HEADER -->
   <section class="section">
-    <h1>Media & Trailers</h1>
-    <p>All visual content from Levy Media Studios lives here.</p>
-  </section>
-
-  <section class="section">
-    <h2>BAMN Trailer</h2>
-    <div class="video-wrapper">
-      <iframe src="https://www.youtube.com/embed/VIDEO_ID_BAMN" allowfullscreen></iframe>
+    <div class="glass-block">
+      <h1>Media & Trailers</h1>
+      <p>All visual content from Levy Media Studios lives here.</p>
     </div>
   </section>
 
+  <!-- BOOK 1 ABOVE TRAILER -->
   <section class="section">
-    <h2>Short Clips & Ads</h2>
-    <div class="video-grid">
-      <div class="video-item">
-        <iframe src="https://www.youtube.com/embed/VIDEO_ID_CLIP1" allowfullscreen></iframe>
-        <p>10-second teaser clip.</p>
-      </div>
-      <div class="video-item">
-        <iframe src="https://www.youtube.com/embed/VIDEO_ID_CLIP2" allowfullscreen></iframe>
-        <p>Character-focused promo.</p>
+    <div class="glass-block">
+      <h2>By Any Means (Book 1)</h2>
+
+      <div class="projects-grid">
+        <article class="book-card">
+          <img src="/assets/img/BAM.png" alt="By Any Means Book 1 Cover" />
+          <h3>By Any Means — Book 1</h3>
+          <p class="price">$19.99</p>
+          <div class="book-actions">
+            <a href="#" class="btn btn-gold">Pre‑Order</a>
+            <a href="#" class="btn btn-outline">More Info</a>
+          </div>
+        </article>
       </div>
     </div>
   </section>
 
+  <!-- BAMN TRAILER (LOCAL VIDEO) -->
   <section class="section">
-    <h2>Future Content</h2>
-    <p>Interviews, behind-the-scenes, and more will be added here as the universe expands.</p>
+    <div class="glass-block">
+      <h2>BAMN Official Trailer</h2>
+
+      <div class="video-wrapper">
+        <video controls playsinline preload="metadata" style="width:100%; max-width:900px; border-radius:12px;">
+          <source src="/assets/videos/byanymeans.mov" type="video/quicktime" />
+          <source src="/assets/videos/byanymeans.mp4" type="video/mp4" />
+          Your browser does not support the video tag.
+        </video>
+      </div>
+
+      <p class="section-subtext">Watch the world of BAMN unfold.</p>
+    </div>
+  </section>
+
+  <!-- BOOK 2 BELOW TRAILER -->
+  <section class="section">
+    <div class="glass-block">
+      <h2>By Any Means 2 (Book 2)</h2>
+
+      <div class="projects-grid">
+        <article class="book-card">
+          <img src="/assets/img/BAM2.jpg" alt="By Any Means 2 Book 2 Cover" />
+          <h3>By Any Means 2 — Book 2</h3>
+          <p class="price">$24.99</p>
+          <div class="book-actions">
+            <a href="#" class="btn btn-gold">Pre‑Order</a>
+            <a href="#" class="btn btn-outline">More Info</a>
+          </div>
+        </article>
+      </div>
+    </div>
+  </section>
+
+  <!-- FUTURE CONTENT -->
+  <section class="section">
+    <div class="glass-block">
+      <h2>Future Content</h2>
+      <p>Interviews, behind‑the‑scenes, and more will be added here as the universe expands.</p>
+    </div>
   </section>
 
 </main>
@@ -65,5 +108,6 @@
 <script>
   document.getElementById("year").textContent = new Date().getFullYear();
 </script>
+
 </body>
 </html>
