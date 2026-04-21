@@ -7,13 +7,42 @@
   box-sizing: border-box;
 }
 
+/* --------------------------------------------------
+   MOBILE-SAFE FULLSCREEN BACKGROUND
+-------------------------------------------------- */
 body {
-  background: url('/assets/img/levy-icon.jpg') center center / cover no-repeat fixed;
-  background-attachment: fixed;
   color: #fff;
   font-family: Arial, Helvetica, sans-serif;
   line-height: 1.6;
   overflow-x: hidden;
+  position: relative;
+  min-height: 100vh;
+}
+
+/* FIXED BACKGROUND THAT WORKS ON MOBILE */
+body::before {
+  content: "";
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background: url('/assets/img/levy-icon.jpg') center center / cover no-repeat;
+  z-index: -2;
+  pointer-events: none;
+}
+
+/* DARK CINEMATIC OVERLAY */
+body::after {
+  content: "";
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background: rgba(0,0,0,0.55);
+  z-index: -1;
+  pointer-events: none;
 }
 
 /* --------------------------------------------------
@@ -23,13 +52,12 @@ body {
   --gold: #d4af37;
   --gold-soft: rgba(212, 175, 55, 0.25);
   --white: #ffffff;
-  --black: #000000;
   --glass-dark: rgba(0, 0, 0, 0.65);
   --glass-light: rgba(0, 0, 0, 0.35);
 }
 
 /* --------------------------------------------------
-   GLASS BLOCK (CINEMATIC TEXT BACKGROUND)
+   GLASS BLOCKS
 -------------------------------------------------- */
 .glass-block {
   background: linear-gradient(
@@ -51,7 +79,7 @@ body {
 .site-header {
   width: 100%;
   padding: 20px 40px;
-  background: rgba(0, 0, 0, 0.85);
+  background: rgba(0,0,0,0.85);
   display: flex;
   justify-content: space-between;
   align-items: center;
@@ -89,7 +117,6 @@ body {
   justify-content: center;
   text-align: center;
   padding: 60px 20px;
-  position: relative;
 }
 
 .hero-overlay {
@@ -251,7 +278,7 @@ section p {
   margin-bottom: 15px;
   border-radius: 8px;
   border: none;
-  background: rgba(255, 255, 255, 0.1);
+  background: rgba(255,255,255,0.1);
   color: var(--white);
 }
 
@@ -266,7 +293,7 @@ section p {
 .site-footer {
   text-align: center;
   padding: 30px;
-  background: rgba(0, 0, 0, 0.85);
+  background: rgba(0,0,0,0.85);
   border-top: 1px solid #111;
   color: #777;
 }
