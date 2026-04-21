@@ -1,0 +1,69 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <title>Media & Trailers | Levy Media Studios</title>
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <link rel="icon" type="image/jpeg" href="/assets/img/levy-icon.jpg" />
+  <link rel="stylesheet" href="/assets/css/styles.css" />
+</head>
+<body class="theme-dark">
+
+<header class="site-header">
+  <div class="logo">
+    <img src="/assets/img/levy-logo.jpg" alt="Levy Media Studios Logo" />
+  </div>
+  <nav class="main-nav">
+    <a href="/index.html">Home</a>
+    <a href="/pages/bamn.html">BAMN Universe</a>
+    <a href="/pages/ppp.html">PPP</a>
+    <a href="/pages/media.html">Media</a>
+    <a href="/pages/about.html">About</a>
+    <a href="/pages/contact.html">Contact</a>
+  </nav>
+</header>
+
+<main id="page-media">
+
+  <section class="section">
+    <h1>Media & Trailers</h1>
+    <p>All visual content from Levy Media Studios lives here.</p>
+  </section>
+
+  <section class="section">
+    <h2>BAMN Trailer</h2>
+    <div class="video-wrapper">
+      <iframe src="https://www.youtube.com/embed/VIDEO_ID_BAMN" allowfullscreen></iframe>
+    </div>
+  </section>
+
+  <section class="section">
+    <h2>Short Clips & Ads</h2>
+    <div class="video-grid">
+      <div class="video-item">
+        <iframe src="https://www.youtube.com/embed/VIDEO_ID_CLIP1" allowfullscreen></iframe>
+        <p>10-second teaser clip.</p>
+      </div>
+      <div class="video-item">
+        <iframe src="https://www.youtube.com/embed/VIDEO_ID_CLIP2" allowfullscreen></iframe>
+        <p>Character-focused promo.</p>
+      </div>
+    </div>
+  </section>
+
+  <section class="section">
+    <h2>Future Content</h2>
+    <p>Interviews, behind-the-scenes, and more will be added here as the universe expands.</p>
+  </section>
+
+</main>
+
+<footer class="site-footer">
+  <p>© <span id="year"></span> Levy Media Studios</p>
+</footer>
+
+<script>
+  document.getElementById("year").textContent = new Date().getFullYear();
+</script>
+</body>
+</html>
