@@ -41,50 +41,70 @@
 
   <!-- CONTACT HEADER -->
   <section class="section">
-    <h1>Contact & Connect</h1>
-    <p>For collaborations, business inquiries, partnerships, and media requests — reach out below.</p>
+    <div class="glass-block">
+      <h1>Contact & Connect</h1>
+      <p>For collaborations, business inquiries, partnerships, and media requests — reach out below.</p>
+    </div>
   </section>
 
-  <!-- BUSINESS INFO -->
+  <!-- BUSINESS INFO WITH LOGO -->
   <section class="section">
-    <h2>Business Information</h2>
+    <div class="glass-block">
 
-    <div class="contact-info-block">
-      <p><strong>Phone:</strong> 313‑588‑9807</p>
+      <h2>Business Information</h2>
 
-      <p><strong>Business:</strong><br>
-        4Hammers Property Management LLC
-      </p>
+      <div style="display:flex; align-items:flex-start; gap:25px; margin-top:20px;">
 
-      <p><strong>Address:</strong><br>
-        1950 S Rochester Rd. #1070<br>
-        Rochester Hills, MI 48307<br>
-        United States
-      </p>
+        <!-- 4Hammers Logo -->
+        <img src="/assets/img/4Hammers.png"
+             alt="4Hammers Property Management Logo"
+             style="width:120px; height:auto; border-radius:10px;">
+
+        <!-- Business Details -->
+        <div class="contact-info-block">
+          <p><strong>Phone:</strong> 313‑588‑9807</p>
+
+          <p><strong>Business:</strong><br>
+            4Hammers Property Management LLC
+          </p>
+
+          <p><strong>Address:</strong><br>
+            1950 S Rochester Rd. #1070<br>
+            Rochester Hills, MI 48307<br>
+            United States
+          </p>
+        </div>
+
+      </div>
+
     </div>
   </section>
 
   <!-- CONTACT FORM -->
   <section class="section">
-    <h2>Send a Message</h2>
-    <p>Your message will be delivered directly to the Owner Dashboard.</p>
+    <div class="glass-block">
+      <h2>Send a Message</h2>
+      <p>Your message will be delivered directly to the Owner Dashboard.</p>
 
-    <form id="contact-form" class="contact-form">
-      <input type="text" name="name" placeholder="Your Name" required />
-      <input type="email" name="email" placeholder="Your Email" required />
-      <textarea name="message" placeholder="Your Message" required></textarea>
-      <button type="submit" class="btn btn-gold">Send Message</button>
-    </form>
+      <form id="contact-form" class="contact-form">
+        <input type="text" name="name" placeholder="Your Name" required />
+        <input type="email" name="email" placeholder="Your Email" required />
+        <textarea name="message" placeholder="Your Message" required></textarea>
+        <button type="submit" class="btn btn-gold">Send Message</button>
+      </form>
 
-    <p id="contact-status" class="form-status"></p>
+      <p id="contact-status" class="form-status"></p>
+    </div>
   </section>
 
   <!-- OWNER DASHBOARD -->
   <section class="section">
-    <h2>Owner Access</h2>
-    <p>If you are the owner, access your dashboard below.</p>
+    <div class="glass-block">
+      <h2>Owner Access</h2>
+      <p>If you are the owner, access your dashboard below.</p>
 
-    <a href="/admin/index.html" class="btn btn-outline">Go to Owner Dashboard</a>
+      <a href="/admin/index.html" class="btn btn-outline">Go to Owner Dashboard</a>
+    </div>
   </section>
 
 </main>
