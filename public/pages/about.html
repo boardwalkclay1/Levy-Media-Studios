@@ -2,61 +2,81 @@
 <html lang="en">
 <head>
   <meta charset="UTF-8" />
-
   <title>About | Levy Media Studios</title>
   <meta name="viewport" content="width=device-width, initial-scale=1" />
-
-  <!-- Favicon -->
-  <link rel="icon" type="image/png" href="/assets/img/favicon.png" />
-  <link rel="apple-touch-icon" href="/assets/img/favicon.png" />
-
-  <!-- Manifest -->
-  <link rel="manifest" href="/manifest.json" />
-
-  <!-- Theme Color -->
-  <meta name="theme-color" content="#000000" />
-
-  <!-- OpenGraph -->
-  <meta property="og:title" content="About | Levy Media Studios" />
-  <meta property="og:description" content="Learn about Levy Media Studios — the cinematic media studio behind BAMN Universe." />
-  <meta property="og:image" content="/assets/img/social-preview.jpg" />
-  <meta property="og:type" content="website" />
-  <meta property="og:url" content="https://levymediastudios.com/about.html" />
-
-  <!-- Twitter Card -->
-  <meta name="twitter:card" content="summary_large_image" />
-  <meta name="twitter:title" content="About | Levy Media Studios" />
-  <meta name="twitter:description" content="Learn about Levy Media Studios — the cinematic media studio behind BAMN Universe." />
-  <meta name="twitter:image" content="/assets/img/social-preview.jpg" />
-
-  <!-- Styles -->
+  <link rel="icon" type="image/jpeg" href="/assets/img/levy-icon.jpg" />
   <link rel="stylesheet" href="/assets/css/styles.css" />
 </head>
-
-<body>
+<body class="theme-dark">
 
 <header class="site-header">
-  <div class="logo" id="nav-studio-name"></div>
+  <div class="logo">
+    <img src="/assets/img/levy-logo.jpg" alt="Levy Media Studios Logo" />
+  </div>
   <nav class="main-nav">
     <a href="/index.html">Home</a>
-    <a href="/about.html">About</a>
-    <a href="/projects.html">Projects</a>
-    <a href="/preorder.html">Pre Order</a>
-    <a href="/contact.html">Contact</a>
+    <a href="/pages/bamn.html">BAMN Universe</a>
+    <a href="/pages/ppp.html">PPP</a>
+    <a href="/pages/media.html">Media</a>
+    <a href="/pages/about.html">About</a>
+    <a href="/pages/contact.html">Contact</a>
   </nav>
 </header>
 
 <main id="page-about">
-  <section id="about-company"></section>
-  <section id="about-mission"></section>
-  <section id="about-vision"></section>
-  <section id="about-founder"></section>
+
+  <section class="section">
+    <h1>About Levy Media Studios</h1>
+    <p>
+      Levy Media Studios is a cinematic media company focused on building story worlds that
+      expose truth and challenge systems — starting with the BAMN Universe and the
+      Preschool to Prison Pipeline (PPP) project.
+    </p>
+  </section>
+
+  <section class="section">
+    <h2>Who You Are</h2>
+    <p>
+      A creator, strategist, and storyteller who understands both the streets and the systems.
+      Levy Media Studios is your vehicle to turn that understanding into worlds, books,
+      visuals, and impact.
+    </p>
+  </section>
+
+  <section class="section">
+    <h2>Why You Created BAMN</h2>
+    <p>
+      BAMN was created to tell the truth about survival, loyalty, and power in environments
+      shaped by invisible rules. It’s not just entertainment — it’s a mirror and a warning.
+    </p>
+  </section>
+
+  <section class="section">
+    <h2>Why PPP Matters</h2>
+    <p>
+      PPP exists to show that the “system” isn’t failing — it’s functioning exactly as designed.
+      By breaking down how kids are funneled from classrooms to cages, PPP positions you as a
+      serious voice in conversations about justice, policy, and reform.
+    </p>
+  </section>
+
+  <section class="section">
+    <h2>Vision</h2>
+    <p>
+      The vision is a full media empire: books, comics, film, animation, and digital content
+      that all connect back to real-world impact. Levy Media Studios is the hub — BAMN and PPP
+      are just the first pillars.
+    </p>
+  </section>
+
 </main>
 
 <footer class="site-footer">
   <p>© <span id="year"></span> Levy Media Studios</p>
 </footer>
 
-<script src="/assets/js/content.js"></script>
+<script>
+  document.getElementById("year").textContent = new Date().getFullYear();
+</script>
 </body>
 </html>
