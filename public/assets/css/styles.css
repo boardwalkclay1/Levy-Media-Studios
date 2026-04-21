@@ -1,135 +1,133 @@
-body {
+/* RESET */
+* {
   margin: 0;
-  background: #000;
-  color: #fff;
-  font-family: Arial, sans-serif;
+  padding: 0;
+  box-sizing: border-box;
 }
 
+body {
+  background: #000;
+  color: #fff;
+  font-family: Arial, Helvetica, sans-serif;
+  line-height: 1.5;
+}
+
+/* HEADER */
 .site-header {
-  padding: 20px;
+  width: 100%;
+  padding: 20px 40px;
+  background: rgba(0,0,0,0.85);
   display: flex;
   justify-content: space-between;
-  background: #111;
+  align-items: center;
+  border-bottom: 1px solid #222;
+  position: sticky;
+  top: 0;
+  z-index: 999;
+}
+
+.site-header .logo img {
+  height: 55px;
+  width: auto;
 }
 
 .main-nav a {
-  color: #ccc;
-  margin-left: 20px;
+  color: #fff;
+  margin-left: 25px;
   text-decoration: none;
+  font-size: 16px;
+  transition: 0.3s;
 }
 
 .main-nav a:hover {
-  color: #fff;
+  color: #1e90ff;
 }
 
-section {
-  padding: 60px 20px;
-  max-width: 900px;
-  margin: auto;
-}
-
-h1, h2, h3 {
-  margin-bottom: 15px;
-}
-
-p {
-  color: #b3b3b3;
-  line-height: 1.6;
-}
-
-.btn {
-  padding: 12px 22px;
-  text-decoration: none;
-  color: #fff;
-  border-radius: 4px;
-  display: inline-block;
-  margin-right: 10px;
-}
-
-.btn.primary {
-  background: #333;
-}
-
-.btn.red {
-  background: #8b0000;
-}
-
-.hero-bg {
-  height: 60vh;
-  background-size: cover;
-  background-position: center;
-  position: relative;
-}
-
-.hero-overlay {
-  position: absolute;
-  inset: 0;
-  background: rgba(0,0,0,0.6);
-}
-
-.hero-content {
-  position: relative;
-  padding: 40px 20px;
-}
-
-.featured-box {
+/* HERO */
+#home-hero {
+  height: 80vh;
+  background: url('/assets/img/levy-icon.jpg') center/cover no-repeat;
   display: flex;
-  gap: 20px;
+  align-items: center;
+  justify-content: center;
+  text-align: center;
 }
 
-.featured-box img {
-  width: 200px;
-  border-radius: 6px;
+#home-hero h1 {
+  font-size: 60px;
+  font-weight: bold;
 }
 
-.trailer-wrap iframe {
-  width: 100%;
-  height: 400px;
+/* SECTIONS */
+section {
+  padding: 80px 40px;
+  border-bottom: 1px solid #111;
 }
 
-.projects-grid {
-  display: grid;
-  grid-template-columns: repeat(auto-fit, minmax(260px, 1fr));
-  gap: 20px;
-}
-
-.project-card {
-  background: #111;
-  padding: 20px;
-  border-radius: 6px;
-}
-
-.project-card img {
-  width: 100%;
-  border-radius: 6px;
-}
-
-.email-form input,
-.contact-form input,
-.contact-form textarea {
-  width: 100%;
-  padding: 12px;
-  margin-bottom: 12px;
-  background: #111;
-  border: 1px solid #333;
-  color: #fff;
-}
-
-.preorder-img,
-.preorder-img-lg {
-  width: 100%;
-  max-width: 300px;
-  display: block;
+section h2 {
+  font-size: 36px;
   margin-bottom: 20px;
 }
 
-#json-editor {
+section p {
+  max-width: 800px;
+  font-size: 18px;
+  color: #ccc;
+}
+
+/* FEATURED */
+#home-featured .item {
+  margin-bottom: 40px;
+}
+
+/* TRAILER */
+#home-trailer iframe {
   width: 100%;
-  height: 80vh;
-  background: #111;
-  color: #fff;
-  padding: 20px;
+  max-width: 900px;
+  height: 500px;
   border: none;
-  outline: none;
-  font-family: monospace;
+  border-radius: 10px;
+}
+
+/* EMAIL SIGNUP */
+#home-email input {
+  padding: 12px;
+  width: 300px;
+  border-radius: 6px;
+  border: none;
+  margin-right: 10px;
+}
+
+#home-email button {
+  padding: 12px 20px;
+  background: #1e90ff;
+  border: none;
+  border-radius: 6px;
+  color: #fff;
+  cursor: pointer;
+}
+
+/* FOOTER */
+.site-footer {
+  text-align: center;
+  padding: 30px;
+  background: #000;
+  border-top: 1px solid #111;
+  color: #777;
+}
+
+/* RESPONSIVE */
+@media (max-width: 768px) {
+  .main-nav a {
+    margin-left: 12px;
+    font-size: 14px;
+  }
+
+  #home-hero h1 {
+    font-size: 40px;
+  }
+
+  section {
+    padding: 50px 20px;
+  }
 }
