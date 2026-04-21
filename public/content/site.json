@@ -2,7 +2,7 @@
   "projects": {
     "items": [
       {
-        "id": "bamn-1",
+        "id": "bam-1",
         "title": "By Any Means",
         "video": "https://www.youtube.com/embed/VIDEO_ID_1",
         "cover": "/assets/img/bamn-1-cover.jpg",
@@ -11,7 +11,7 @@
         "detailsUrl": "/pages/projects/bamn-1.html"
       },
       {
-        "id": "bamn-2",
+        "id": "bam-2",
         "title": "By Any Means 2",
         "video": "https://www.youtube.com/embed/VIDEO_ID_2",
         "cover": "/assets/img/bamn-2-cover.jpg",
