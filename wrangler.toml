@@ -17,4 +17,4 @@ database_name = "levy"
 database_id = "44b20a46-791f-42f1-bd96-f4201270e3d9"
 
 [vars]
-ADMIN_KEY = "CHANGE_THIS_TO_A_LONG_RANDOM_SECRET"
+ADMIN_KEY = "levychevystudio"
