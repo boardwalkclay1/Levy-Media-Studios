@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <title>Owner Dashboard | Levy Media Studios</title>
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <link rel="stylesheet" href="/admin/css/admin.css" />
+</head>
+
+<body class="admin-bg">
+
+<header class="admin-header">
+  <h1>Owner Dashboard</h1>
+  <button id="logout-btn">Logout</button>
+</header>
+
+<div class="admin-tabs">
+  <button data-tab="messages" class="active">Messages</button>
+  <button data-tab="leads">Leads</button>
+  <button data-tab="events">Analytics</button>
+  <button data-tab="orders">Orders</button>
+</div>
+
+<div id="dashboard-content" class="admin-table"></div>
+
+<script src="/admin/js/auth.js"></script>
+<script src="/admin/js/api.js"></script>
+<script src="/admin/js/dashboard.js"></script>
+
+</body>
+</html>
